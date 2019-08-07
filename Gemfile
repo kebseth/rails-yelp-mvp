@@ -12,6 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
+gem 'faker'
 
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
