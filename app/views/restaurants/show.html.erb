@@ -1,0 +1,11 @@
+<h1><%= @restaurant.name %></h1>
+<div class="info_resto">
+  <p>Adress : <%= @restaurant.address %></p>
+  <p><%= @phone %></p>
+</div>
+
+<%= link_to new_restaurant_review_path(@restaurant) do %>
+ <p><strong><i class="fas fa-plus"></i> Add a review</strong></p>
+<% end %>
+
+<%= link_to "Retour à la base", root_path %>
