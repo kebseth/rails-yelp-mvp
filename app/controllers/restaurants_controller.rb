@@ -6,6 +6,7 @@ class RestaurantsController < ApplicationController
   def show
     set_restaurant
     @phone = phone_number?
+    @reviews = @restaurant.reviews
   end
 
   def new
@@ -27,7 +28,7 @@ class RestaurantsController < ApplicationController
 
   def phone_number?
     if @restaurant.phone_number
-      return @restaurant.phone_number
+      return "Phone number : #{@restaurant.phone_number}"
     else
       return "The phone number of this restaurant has not been given"
     end
